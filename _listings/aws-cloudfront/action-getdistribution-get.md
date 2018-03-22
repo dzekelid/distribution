@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetDistribution&k=1:
+  /?Action=GetDistribution:
     get:
       summary: ' Get Distribution '
       description: Get the information about a distribution
