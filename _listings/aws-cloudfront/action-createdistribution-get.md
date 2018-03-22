@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateDistribution&k=1:
+  /?Action=CreateDistribution:
     get:
       summary: ' Create Distribution '
       description: Creates a new web distribution
