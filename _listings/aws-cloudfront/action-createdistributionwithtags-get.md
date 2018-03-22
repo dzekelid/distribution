@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateDistributionWithTags&k=1:
+  /?Action=CreateDistributionWithTags:
     get:
       summary: ' Create Distribution With Tags '
       description: Create a new distribution with tags
