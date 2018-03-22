@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetDistributionConfig&k=1:
+  /?Action=GetDistributionConfig:
     get:
       summary: ' Get Distribution Config '
       description: Get the configuration information about a distribution
