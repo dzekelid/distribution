@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteDistribution&k=1:
+  /?Action=DeleteDistribution:
     get:
       summary: ' Delete Distribution '
       description: Delete a distribution
