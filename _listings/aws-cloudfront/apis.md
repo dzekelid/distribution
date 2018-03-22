@@ -13,9 +13,9 @@ tags:
 - Content
 - CDN
 - Amazon Web Services
-created: "2018-03-15"
-modified: "2018-03-15"
-url: https://raw.githubusercontent.com/streamdata-gallery/distribution/master/_listings/aws-cloudfront/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS CloudFront API
@@ -27,7 +27,7 @@ apis:
   tags: Distribution
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/distribution/master/_listings/aws-cloudfront/action-updatestreamingdistribution-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-createdistribution-get.md
 x-common:
 - type: x-analysis
   url: https://aws.amazon.com/cloudfront/reporting/
