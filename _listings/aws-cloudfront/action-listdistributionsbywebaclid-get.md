@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListDistributionsByWebACLId&k=1:
+  /?Action=ListDistributionsByWebACLId:
     get:
       summary: ' List Distributions By Web A C L Id '
       description: List the distributions that are associated with a specified AWS
