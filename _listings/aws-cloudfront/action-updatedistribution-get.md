@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateDistribution&k=1:
+  /?Action=UpdateDistribution:
     get:
       summary: ' Update Distribution '
       description: Update a distribution
