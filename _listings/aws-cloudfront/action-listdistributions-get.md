@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=ListDistributions&k=1:
+  /?Action=ListDistributions:
     get:
       summary: ' List Distributions '
       description: List distributions
