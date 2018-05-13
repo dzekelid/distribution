@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CloudFront API
+  title: AWS CloudFront API List Distributions By Web A C L Id
   version: 1.0.0
+  description: List the distributions that are associated with a specified AWS WAF
+    web ACL.
 schemes:
 - http
 produces:
