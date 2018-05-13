@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CloudFront API
+  title: AWS CloudFront API Delete Distribution
   version: 1.0.0
+  description: Delete a distribution.
 schemes:
 - http
 produces:
