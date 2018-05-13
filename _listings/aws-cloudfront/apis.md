@@ -28,15 +28,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-updatestreamingdistribution-get.md
-- name: AWS CloudFront API Create Distribution With Tags
-  description: Create a new distribution with tags.
+- name: AWS CloudFront API Create Streaming Distribution
+  description: Creates a new RMTP distribution.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonCloudFront.png
   humanURL: https://aws.amazon.com/cloudfront/
   baseURL: http:://{host}//
   tags: Distribution
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-createdistributionwithtags-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-createstreamingdistribution-get.md
 x-common:
 - type: x-analysis
   url: https://aws.amazon.com/cloudfront/reporting/
