@@ -28,15 +28,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-updatestreamingdistribution-get.md
-- name: AWS CloudFront API List Distributions
-  description: List distributions.
+- name: AWS CloudFront API List Distributions By Web A C L Id
+  description: List the distributions that are associated with a specified AWS WAF
+    web ACL.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonCloudFront.png
   humanURL: https://aws.amazon.com/cloudfront/
   baseURL: http:://{host}//
   tags: Distribution
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-listdistributions-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/action-listdistributionsbywebaclid-get.md
 x-common:
 - type: x-analysis
   url: https://aws.amazon.com/cloudfront/reporting/
