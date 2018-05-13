@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CloudFront API
+  title: AWS CloudFront API Get Distribution Config
   version: 1.0.0
+  description: Get the configuration information about a distribution.
 schemes:
 - http
 produces:
