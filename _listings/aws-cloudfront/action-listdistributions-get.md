@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CloudFront API
+  title: AWS CloudFront API List Distributions
   version: 1.0.0
+  description: List distributions.
 schemes:
 - http
 produces:
