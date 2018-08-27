@@ -16,129 +16,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /service/attuversedistribution_attuverse/action/getFeed:
-    get:
-      summary: Get Service Attuversedistribution Attuverse Action Getfeed
-      description: ""
-      operationId: attUverse.getFeed
-      x-api-path-slug: serviceattuversedistribution-attuverseactiongetfeed-get
-      parameters:
-      - in: query
-        name: distributionProfileId
-      - in: query
-        name: hash
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service
-      - Attuversedistribution
-      - Attuverse
-      - Action
-      - GetFeed
-  /service/avndistribution_avn/action/getFeed:
-    get:
-      summary: Get Service Avndistribution Avn Action Getfeed
-      description: ""
-      operationId: avn.getFeed
-      x-api-path-slug: serviceavndistribution-avnactiongetfeed-get
-      parameters:
-      - in: query
-        name: distributionProfileId
-      - in: query
-        name: hash
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service
-      - Avndistribution
-      - Avn
-      - Action
-      - GetFeed
-  /service/comcastmrssdistribution_comcastmrss/action/getFeed:
-    get:
-      summary: Get Service Comcastmrssdistribution Comcastmrss Action Getfeed
-      description: ""
-      operationId: comcastMrss.getFeed
-      x-api-path-slug: servicecomcastmrssdistribution-comcastmrssactiongetfeed-get
-      parameters:
-      - in: query
-        name: distributionProfileId
-      - in: query
-        name: hash
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service
-      - Comcastmrssdistribution
-      - Comcastmrss
-      - Action
-      - GetFeed
-  /service/contentdistribution_contentdistributionbatch/action/createRequiredJobs:
-    get:
-      summary: Get Service Contentdistribution Contentdistributionbatch Action Createrequiredjobs
-      description: creates all required jobs according to entry distribution dirty
-        flags
-      operationId: contentDistributionBatch.createRequiredJobs
-      x-api-path-slug: servicecontentdistribution-contentdistributionbatchactioncreaterequiredjobs-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service
-      - Contentdistribution
-      - Contentdistributionbatch
-      - Action
-      - CreateRequiredJobs
-  /service/contentdistribution_contentdistributionbatch/action/getAssetUrl:
-    get:
-      summary: Get Service Contentdistribution Contentdistributionbatch Action Getasseturl
-      description: returns absolute valid url for asset file
-      operationId: contentDistributionBatch.getAssetUrl
-      x-api-path-slug: servicecontentdistribution-contentdistributionbatchactiongetasseturl-get
-      parameters:
-      - in: query
-        name: assetId
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service
-      - Contentdistribution
-      - Contentdistributionbatch
-      - Action
-      - GetAssetUrl
-  /service/contentdistribution_contentdistributionbatch/action/updateSunStatus:
-    get:
-      summary: Get Service Contentdistribution Contentdistributionbatch Action Updatesunstatus
-      description: updates entry distribution sun status in the search engine
-      operationId: contentDistributionBatch.updateSunStatus
-      x-api-path-slug: servicecontentdistribution-contentdistributionbatchactionupdatesunstatus-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Service
-      - Contentdistribution
-      - Contentdistributionbatch
-      - Action
-      - UpdateSunStatus
   /service/contentdistribution_distributionprofile/action/add:
     get:
       summary: Get Service Contentdistribution Distributionprofile Action Add
@@ -1511,6 +1388,183 @@ paths:
       - Distributionprofile
       - Action
       - Update
+  /service/contentdistribution_distributionprofile/action/updateStatus:
+    get:
+      summary: Get Service Contentdistribution Distributionprofile Action Updatestatus
+      description: Update Distribution Profile status by id
+      operationId: distributionProfile.updateStatus
+      x-api-path-slug: servicecontentdistribution-distributionprofileactionupdatestatus-get
+      parameters:
+      - in: query
+        name: id
+      - in: query
+        name: No Name
+      - in: query
+        name: status
+        description: 'Enum Type: `KalturaDistributionProfileStatus`'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service
+      - Contentdistribution
+      - Distributionprofile
+      - Action
+      - UpdateStatus
+  /service/contentdistribution_distributionprovider/action/list:
+    get:
+      summary: Get Service Contentdistribution Distributionprover Action List
+      description: List all distribution providers
+      operationId: distributionProvider.list
+      x-api-path-slug: servicecontentdistribution-distributionprovideractionlist-get
+      parameters:
+      - in: query
+        name: filter[advancedSearch][attribute]
+        description: 'Enum Type: `KalturaBaseEntryCompareAttribute`'
+      - in: query
+        name: filter[advancedSearch][categoriesMatchOr]
+      - in: query
+        name: filter[advancedSearch][categoryEntryStatusIn]
+      - in: query
+        name: filter[advancedSearch][categoryIdEqual]
+      - in: query
+        name: filter[advancedSearch][comparison]
+        description: 'Enum Type: `KalturaSearchConditionComparison`'
+      - in: query
+        name: filter[advancedSearch][contentLike]
+      - in: query
+        name: filter[advancedSearch][contentMultiLikeAnd]
+      - in: query
+        name: filter[advancedSearch][contentMultiLikeOr]
+      - in: query
+        name: filter[advancedSearch][cuePointsFreeText]
+      - in: query
+        name: filter[advancedSearch][cuePointSubTypeEqual]
+      - in: query
+        name: filter[advancedSearch][cuePointTypeIn]
+      - in: query
+        name: filter[advancedSearch][depthGreaterThanEqual]
+      - in: query
+        name: filter[advancedSearch][distributionProfileId]
+      - in: query
+        name: filter[advancedSearch][distributionSunStatus]
+        description: 'Enum Type: `KalturaEntryDistributionSunStatus`'
+      - in: query
+        name: filter[advancedSearch][entryDistributionFlag]
+        description: 'Enum Type: `KalturaEntryDistributionFlag`'
+      - in: query
+        name: filter[advancedSearch][entryDistributionStatus]
+        description: 'Enum Type: `KalturaEntryDistributionStatus`'
+      - in: query
+        name: filter[advancedSearch][entryDistributionValidationErrors]
+        description: Comma seperated validation error types
+      - in: query
+        name: filter[advancedSearch][extendedStatusEqual]
+        description: 'Enum Type: `KalturaUserEntryExtendedStatus`'
+      - in: query
+        name: filter[advancedSearch][extendedStatusIn]
+      - in: query
+        name: filter[advancedSearch][field]
+      - in: query
+        name: filter[advancedSearch][hasEntryDistributionValidationErrors]
+      - in: query
+        name: filter[advancedSearch][idEqual]
+      - in: query
+        name: filter[advancedSearch][idIn]
+      - in: query
+        name: filter[advancedSearch][indexIdGreaterThan]
+      - in: query
+        name: filter[advancedSearch][isQuiz]
+        description: 'Enum Type: `KalturaNullableBoolean`'
+      - in: query
+        name: filter[advancedSearch][items]
+      - in: query
+        name: filter[advancedSearch][memberIdEq]
+      - in: query
+        name: filter[advancedSearch][memberIdIn]
+      - in: query
+        name: filter[advancedSearch][memberPermissionsMatchAnd]
+      - in: query
+        name: filter[advancedSearch][memberPermissionsMatchOr]
+      - in: query
+        name: filter[advancedSearch][metadataProfileId]
+      - in: query
+        name: filter[advancedSearch][noDistributionProfiles]
+      - in: query
+        name: filter[advancedSearch][not]
+      - in: query
+        name: filter[advancedSearch][objectType]
+      - in: query
+        name: filter[advancedSearch][orderBy]
+        description: 'Enum Type: `KalturaCategoryEntryAdvancedOrderBy`'
+      - in: query
+        name: filter[advancedSearch][type]
+        description: 'Enum Type: `KalturaSearchOperatorType`'
+      - in: query
+        name: filter[advancedSearch][updatedAtGreaterThanOrEqual]
+      - in: query
+        name: filter[advancedSearch][updatedAtLessThanOrEqual]
+      - in: query
+        name: filter[advancedSearch][userIdEqual]
+      - in: query
+        name: filter[advancedSearch][userIdIn]
+      - in: query
+        name: filter[advancedSearch][value]
+      - in: query
+        name: filter[advancedSearch][watermarkId]
+      - in: query
+        name: filter[createdAtGreaterThanOrEqual]
+      - in: query
+        name: filter[createdAtLessThanOrEqual]
+      - in: query
+        name: filter[idEqual]
+      - in: query
+        name: filter[idIn]
+      - in: query
+        name: filter[isDefaultEqual]
+        description: 'Enum Type: `KalturaNullableBoolean`'
+      - in: query
+        name: filter[isDefaultIn]
+      - in: query
+        name: filter[objectType]
+      - in: query
+        name: filter[orderBy]
+      - in: query
+        name: filter[partnerIdEqual]
+      - in: query
+        name: filter[partnerIdIn]
+      - in: query
+        name: filter[statusEqual]
+        description: 'Enum Type: `KalturaGenericDistributionProviderStatus`'
+      - in: query
+        name: filter[statusIn]
+      - in: query
+        name: filter[typeEqual]
+        description: 'Enum Type: `KalturaDistributionProviderType`'
+      - in: query
+        name: filter[typeIn]
+      - in: query
+        name: filter[updatedAtGreaterThanOrEqual]
+      - in: query
+        name: filter[updatedAtLessThanOrEqual]
+      - in: query
+        name: No Name
+      - in: query
+        name: pager[pageIndex]
+        description: The page number for which {pageSize} of objects should be retrieved
+          (Default is 1)
+      - in: query
+        name: pager[pageSize]
+        description: The number of objects to retrieve
+      responses:
+        200:
+          description: OK
+      tags:
+      - Service
+      - Contentdistribution
+      - Distributionprovider
+      - Action
+      - List
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
