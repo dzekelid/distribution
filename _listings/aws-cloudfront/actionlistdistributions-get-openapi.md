@@ -338,6 +338,96 @@ paths:
       - Streaming
       - Distribution
       - Config
+  /?Action=UpdateDistribution:
+    get:
+      summary: Update Distribution
+      description: Update a distribution.
+      operationId: updateDistribution
+      x-api-path-slug: actionupdatedistribution-get
+      parameters:
+      - in: query
+        name: Description
+        description: A description for the snapshot
+        type: string
+      - in: query
+        name: DryRun
+        description: Checks whether you have the required permissions for the action,
+          without actually making the      request, and provides an error response
+        type: string
+      - in: query
+        name: Id
+        description: The distributions id
+        type: string
+      - in: query
+        name: If-Match
+        description: The value of the ETag header that you received when retrieving
+          the      distributions configuration
+        type: string
+      - in: query
+        name: VolumeId
+        description: The ID of the EBS volume
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Distribution
+  /?Action=UpdateStreamingDistribution:
+    get:
+      summary: Update Streaming Distribution
+      description: Update a streaming distribution.
+      operationId: updateStreamingDistribution
+      x-api-path-slug: actionupdatestreamingdistribution-get
+      parameters:
+      - in: query
+        name: AvailabilityZone
+        description: The Availability Zone in which to create the volume
+        type: string
+      - in: query
+        name: DryRun
+        description: Checks whether you have the required permissions for the action,
+          without actually making the      request, and provides an error response
+        type: string
+      - in: query
+        name: Encrypted
+        description: Specifies whether the volume should be encrypted
+        type: string
+      - in: query
+        name: Id
+        description: The streaming distributions id
+        type: string
+      - in: query
+        name: If-Match
+        description: The value of the ETag header that you received when retrieving
+          the      streaming distributions configuration
+        type: string
+      - in: query
+        name: Iops
+        description: Only valid for Provisioned IOPS SSD volumes
+        type: string
+      - in: query
+        name: KmsKeyId
+        description: The full ARN of the AWS Key Management Service (AWS KMS) customer
+          master key (CMK) to use when creating the encrypted      volume
+        type: string
+      - in: query
+        name: Size
+        description: The size of the volume, in GiBs
+        type: string
+      - in: query
+        name: SnapshotId
+        description: The snapshot from which to create the volume
+        type: string
+      - in: query
+        name: VolumeType
+        description: The volume type
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Streaming
+      - Distribution
   /?Action=ListDistributions:
     get:
       summary: List Distributions
@@ -385,6 +475,73 @@ paths:
           description: OK
       tags:
       - List
+      - Distributions
+  /?Action=ListDistributionsByWebACLId:
+    get:
+      summary: List Distributions By Web A C L Id
+      description: List the distributions that are associated with a specified AWS
+        WAF web ACL.
+      operationId: listDistributionsByWebACLId
+      x-api-path-slug: actionlistdistributionsbywebaclid-get
+      parameters:
+      - in: query
+        name: HostId.N
+        description: The IDs of the Dedicated Hosts you want to release
+        type: string
+      - in: query
+        name: Marker
+        description: Use Marker and MaxItems to control pagination of results
+        type: string
+      - in: query
+        name: MaxItems
+        description: The maximum number of distributions that you want CloudFront
+          to return in the response body
+        type: string
+      - in: query
+        name: WebACLId
+        description: The ID of the AWS WAF web ACL that you want to list the associated
+          distributions
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - List
+      - Distributions
+      - Web
+      - C
+      - L
+      - Id
+  /?Action=ListStreamingDistributions:
+    get:
+      summary: List Streaming Distributions
+      description: List streaming distributions.
+      operationId: listStreamingDistributions
+      x-api-path-slug: actionliststreamingdistributions-get
+      parameters:
+      - in: query
+        name: DhcpConfiguration.N
+        description: A DHCP configuration option
+        type: string
+      - in: query
+        name: DryRun
+        description: Checks whether you have the required permissions for the action,
+          without actually making the request,        and provides an error response
+        type: string
+      - in: query
+        name: Marker
+        description: The value that you provided for the Marker request parameter
+        type: string
+      - in: query
+        name: MaxItems
+        description: The value that you provided for the MaxItems request parameter
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - List
+      - Streaming
       - Distributions
 x-streamrank:
   polling_total_time_average: 0

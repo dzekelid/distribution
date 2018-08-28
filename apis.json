@@ -1,0 +1,90 @@
+{
+	"name": "Streadata.io API Gallery - Distribution",
+	"description": "This is a repository of distribution APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/distribution.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://distribution.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "VideoBloom",
+			"x-api-slug": "videobloom",
+			"description": "Connect, tell, sell and share your stories and products with the power of socially smart video solutions from VideoBloom.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/518-videobloom,-inc-.jpg",
+			"humanURL": "http://www.videobloom.com",
+			"baseURL": "https:///",
+			"tags": "Distribution",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/videobloom/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Fishbowl",
+			"x-api-slug": "fishbowl",
+			"description": "Fishbowl, the #1 inventory management software for QuickBooks, offers multi-location tracking, manufacturing, barcoding and more. Also runs standalone for asset tracking.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/786-fishbowl.jpg",
+			"humanURL": "http://www.fishbowlinventory.com/developer-network/tools",
+			"baseURL": "https:///",
+			"tags": "Distribution",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/fishbowl/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS CloudFront",
+			"x-api-slug": "aws-cloudfront",
+			"description": "Amazon CloudFront is a global content delivery network (CDN) service that accelerates delivery of your websites, APIs, video content or other web assets. It integrates with other Amazon Web Services products to give developers and businesses an easy way to accelerate content to end users with no minimum usage commitments.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Storage-Content-Delivery_AmazonCloudFront.png",
+			"humanURL": "https://aws.amazon.com/cloudfront/",
+			"baseURL": ":///",
+			"tags": "Distribution",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Kaltura",
+			"x-api-slug": "kaltura",
+			"description": "A recognized leader in the OTT TV (Over the Top TV), OVP (Online Video Platform), EdVP (Education Video Platform) and EVP (Enterprise Video Platform) markets, Kaltura has emerged as the fastest growing video platform, and as the one with the widest use-case and appeal. Kaltura is deployed globally in thousands of enterprises, media companies, service providers and educational institutions and engages hundreds of millions of viewers at home, in work, and at school. The company is committed to its core values of openness, flexibility, and collaboration, and is the initiator and backer of the worlds leading open-source video-management project, which is home to more than 100,000 community members.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28437-kaltura-vpaa-s.jpg",
+			"humanURL": "http://kaltura.com",
+			"baseURL": "https://www.kaltura.com//api_v3",
+			"tags": "Distribution",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/kaltura/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Distribution",
+	"include": [
+		{
+			"name": "VideoBloom",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/videobloom/apis.yaml"
+		},
+		{
+			"name": "Fishbowl",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/fishbowl/apis.yaml"
+		},
+		{
+			"name": "AWS CloudFront",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/aws-cloudfront/apis.yaml"
+		},
+		{
+			"name": "Kaltura",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/distribution/master/_listings/kaltura/apis.yaml"
+		}
+	]
+}
